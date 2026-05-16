@@ -150,6 +150,60 @@
     </div>
   </section>
 
+  <!-- BOOKING FORM -->
+  <section class="section booking-section">
+    <div class="container">
+      <div class="booking-wrap">
+        <div class="booking-info">
+          <span class="section-label">Instant Booking</span>
+          <h2>Book Your Taxi Now</h2>
+          <p>Fill in the form and your details will be sent directly to us via WhatsApp. We'll confirm your booking fast.</p>
+          <ul class="why-list" style="margin-top:1rem;">
+            <li>✅ Instant WhatsApp confirmation</li>
+            <li>✅ Fixed price agreed upfront</li>
+            <li>✅ Available 24/7</li>
+          </ul>
+          <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:0.6rem;">
+            <a href="tel:+447444406443" style="font-weight:600; color:var(--dark);">📞 +44 7444 406443</a>
+            <a href="mailto:info@44taxis.com" style="font-weight:600; color:var(--dark);">📩 info@44taxis.com</a>
+          </div>
+        </div>
+        <div class="booking-form-card">
+          <h3>Quick Booking Form</h3>
+          <p style="font-size:0.85rem; color:var(--grey); margin-bottom:1.25rem;">Your details will open in WhatsApp ready to send.</p>
+          <div class="form-group">
+            <label for="bk-name">Full Name *</label>
+            <input type="text" id="bk-name" placeholder="e.g. John Smith"/>
+          </div>
+          <div class="form-group">
+            <label for="bk-phone">Phone Number *</label>
+            <input type="tel" id="bk-phone" placeholder="e.g. 07700 900000"/>
+          </div>
+          <div class="form-group">
+            <label for="bk-email">Email Address</label>
+            <input type="email" id="bk-email" placeholder="e.g. john@email.com"/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bk-date">Date *</label>
+              <input type="date" id="bk-date"/>
+            </div>
+            <div class="form-group">
+              <label for="bk-time">Time *</label>
+              <input type="time" id="bk-time"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bk-msg">Journey Details *</label>
+            <textarea id="bk-msg" rows="3" placeholder="e.g. Pickup from 12 High St Thame, drop off at Heathrow Terminal 5"></textarea>
+          </div>
+          <button onclick="sendWhatsApp()" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1rem; padding:0.85rem;">💬 Send Booking via WhatsApp</button>
+          <p style="font-size:0.75rem; color:var(--grey); margin-top:0.75rem; text-align:center;">* Required fields. This opens WhatsApp with your details pre-filled.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA BANNER -->
   <section class="cta-banner">
     <div class="container">
@@ -201,10 +255,38 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 44Taxis Thame. All rights reserved.</p>
+      <p>© 44Taxis Thame. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="main.js"></script>
+  <script>
+    function sendWhatsApp() {
+      const name    = document.getElementById('bk-name').value.trim();
+      const phone   = document.getElementById('bk-phone').value.trim();
+      const email   = document.getElementById('bk-email').value.trim();
+      const date    = document.getElementById('bk-date').value;
+      const time    = document.getElementById('bk-time').value;
+      const msg     = document.getElementById('bk-msg').value.trim();
+
+      if (!name || !phone || !date || !time || !msg) {
+        alert('Please fill in all required fields (Name, Phone, Date, Time and Journey Details).');
+        return;
+      }
+
+      const formatted = `Hi 44Taxis! I'd like to book a taxi 🚖
+
+👤 Name: ${name}
+📞 Phone: ${phone}${email ? '\n📩 Email: ' + email : ''}
+📅 Date: ${date}
+🕐 Time: ${time}
+📍 Journey: ${msg}
+
+Please confirm availability and price. Thank you!`;
+
+      const url = 'https://wa.me/447444406443?text=' + encodeURIComponent(formatted);
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
