@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44 Taxi — Brand Assets</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --black: #0a0a0a;
+      --grey: #1a1a1a;
+      --white: #f8f6f0;
+    }
+    body { font-family: 'Arial', sans-serif; background: #111; color: var(--white); padding: 48px 32px; }
+    h1 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 48px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .card {
+      border-radius: 12px;
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      min-height: 200px;
+    }
+    .card-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      opacity: 0.5;
+      margin-top: 8px;
+    }
+    .dark { background: #0a0a0a; border: 1px solid rgba(255,255,255,0.06); }
+    .light { background: #f8f6f0; border: 1px solid rgba(0,0,0,0.08); }
+    .gold-bg { background: linear-gradient(135deg, #c9a84c, #9a7530); }
+    .grey-bg { background: #1a1a1a; border: 1px solid rgba(255,255,255,0.06); }
+    .light .card-label { color: #333; }
+    .favicons { display: flex; align-items: center; gap: 20px; }
+    .favicon-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .favicon-wrap span { font-size: 11px; opacity: 0.5; letter-spacing: 0.1em; }
+    section { margin-bottom: 48px; }
+    section > h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--gold); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(201,168,76,0.2); }
+    .color-swatches { display: flex; gap: 16px; flex-wrap: wrap; }
+    .swatch { width: 80px; height: 80px; border-radius: 8px; position: relative; }
+    .swatch-label { font-size: 11px; margin-top: 8px; opacity: 0.6; text-align: center; }
+    .swatch-wrap { display: flex; flex-direction: column; align-items: center; }
+    .s1 { background: linear-gradient(135deg, #e8c96a, #c9a84c, #9a7530); }
+    .s2 { background: #0a0a0a; border: 1px solid rgba(255,255,255,0.1); }
+    .s3 { background: #1a1a1a; border: 1px solid rgba(255,255,255,0.06); }
+    .s4 { background: #f8f6f0; }
+  </style>
+</head>
+<body>
+
+<h1>44 Taxi — Brand Assets Preview</h1>
+
+<section>
+  <h2>Logo — Dark Background (Primary Use)</h2>
+  <div class="grid">
+    <div class="card dark">
+      <img src="logo.svg" alt="44 Taxi Logo" style="max-width:260px; height:auto;">
+      <span class="card-label">logo.svg · On black</span>
+    </div>
+    <div class="card grey-bg">
+      <img src="logo.svg" alt="44 Taxi Logo" style="max-width:260px; height:auto;">
+      <span class="card-label">logo.svg · On dark grey</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Logo — Light Background</h2>
+  <div class="grid">
+    <div class="card light">
+      <img src="logo.svg" alt="44 Taxi Logo" style="max-width:260px; height:auto;">
+      <span class="card-label" style="color:#333">logo.svg · On white — note: car icon will adapt</span>
+    </div>
+    <div class="card gold-bg">
+      <img src="logo.svg" alt="44 Taxi Logo" style="max-width:260px; height:auto; filter:brightness(0) invert(1);">
+      <span class="card-label">logo.svg · Inverted on gold</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Favicon / App Icon</h2>
+  <div class="card dark" style="max-width:400px">
+    <div class="favicons">
+      <div class="favicon-wrap">
+        <img src="favicon.svg" width="16" height="16" alt="16px favicon">
+        <span>16px</span>
+      </div>
+      <div class="favicon-wrap">
+        <img src="favicon.svg" width="32" height="32" alt="32px favicon">
+        <span>32px</span>
+      </div>
+      <div class="favicon-wrap">
+        <img src="favicon.svg" width="48" height="48" alt="48px favicon">
+        <span>48px</span>
+      </div>
+      <div class="favicon-wrap">
+        <img src="favicon.svg" width="64" height="64" alt="64px favicon">
+        <span>64px</span>
+      </div>
+      <div class="favicon-wrap">
+        <img src="favicon.svg" width="96" height="96" alt="96px favicon">
+        <span>96px</span>
+      </div>
+    </div>
+    <span class="card-label">favicon.svg — Gold badge with "44"</span>
+  </div>
+</section>
+
+<section>
+  <h2>Brand Colours</h2>
+  <div class="color-swatches">
+    <div class="swatch-wrap">
+      <div class="swatch s1"></div>
+      <div class="swatch-label">Gold<br>#C9A84C</div>
+    </div>
+    <div class="swatch-wrap">
+      <div class="swatch s2"></div>
+      <div class="swatch-label">Black<br>#0A0A0A</div>
+    </div>
+    <div class="swatch-wrap">
+      <div class="swatch s3"></div>
+      <div class="swatch-label">Dark Grey<br>#1A1A1A</div>
+    </div>
+    <div class="swatch-wrap">
+      <div class="swatch s4"></div>
+      <div class="swatch-label">Off-White<br>#F8F6F0</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Files Included</h2>
+  <ul style="font-size:14px; color:rgba(248,246,240,0.6); line-height:2; list-style:none; padding:0;">
+    <li>📄 <strong style="color:var(--white)">assets/logo.svg</strong> — Full horizontal logo (SVG, scalable, any size)</li>
+    <li>📄 <strong style="color:var(--white)">assets/favicon.svg</strong> — Square badge icon (browser tab, app icon)</li>
+    <li>📄 <strong style="color:var(--white)">index.html</strong> — Website with logos embedded</li>
+  </ul>
+  <p style="margin-top:20px; font-size:13px; color:rgba(201,168,76,0.7);">
+    ✅ All files are SVG — infinitely scalable, no quality loss at any size.<br>
+    ✅ Use logo.svg on business cards, WhatsApp profile, Google Business, vehicles.<br>
+    ✅ favicon.svg works as browser tab icon and Apple Touch icon.
+  </p>
+</section>
+
+</body>
+</html>

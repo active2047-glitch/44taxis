@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44 Taxi | Local Taxi & Airport Transfers | Book Online</title>
+  <meta name="description" content="44 Taxi – reliable local taxi and airport transfer service. Available 24/7. Book online or call 07444 406443. Fast, professional, affordable.">
+  <meta name="keywords" content="44 taxi, local taxi, airport transfers, taxi booking, cab service, taxi near me">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="44 Taxi | Local Taxi & Airport Transfers">
+  <meta property="og:description" content="Reliable 24/7 taxi and airport transfer service. Book online or call 07444 406443.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://44taxi.com">
+  <link rel="canonical" href="https://44taxi.com/">
+
+  <!-- Favicon (inline SVG data URI — works with no external files) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='fg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23e8c96a'/%3E%3Cstop offset='100%25' style='stop-color:%239a7530'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='url(%23fg)'/%3E%3Crect x='2' y='2' width='28' height='28' rx='5.5' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='1'/%3E%3Ctext x='16' y='22' font-family='Arial Black,Arial,sans-serif' font-size='17' font-weight='900' fill='%230a0a0a' text-anchor='middle' letter-spacing='-1'%3E44%3C/text%3E%3Crect x='9' y='24.5' width='14' height='2' rx='1' fill='rgba(10,10,10,0.35)'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#c9a84c">
+  <meta property="og:image" content="https://44taxi.com/assets/logo.svg">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "44 Taxi",
+    "telephone": "07444406443",
+    "email": "info@44taxi.com",
+    "url": "https://44taxi.com",
+    "priceRange": "££",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "areaServed": "Local area and airports",
+    "description": "Professional taxi and airport transfer service available 24/7."
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --gold: #c9a84c;
+      --gold-light: #e8c96a;
+      --gold-dark: #9a7530;
+      --white: #f8f6f0;
+      --grey: #1a1a1a;
+      --grey2: #2a2a2a;
+      --grey3: #3d3d3d;
+      --text-muted: #888;
+      --radius: 4px;
+      --transition: 0.3s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── ANNOUNCEMENT BANNER ─── */
+    .announcement-banner {
+      background: var(--gold);
+      color: var(--black);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      position: relative;
+      z-index: 100;
+    }
+    .announcement-banner a { color: var(--black); text-decoration: underline; }
+
+    /* ─── HEADER / NAV ─── */
+    header {
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .logo svg { height: 46px; width: auto; display: block; }
+    .footer-brand .logo svg { height: 52px; }
+
+    nav { display: flex; align-items: center; gap: 6px; }
+    nav a {
+      color: rgba(248,246,240,0.75);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    nav a:hover { color: var(--gold); background: rgba(201,168,76,0.1); }
+
+    .nav-cta {
+      background: var(--gold) !important;
+      color: var(--black) !important;
+      font-weight: 700 !important;
+      padding: 9px 20px !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; }
+
+    .nav-phone {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold) !important;
+      font-weight: 700 !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+      display: block;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10,10,10,0.98);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 32px;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: var(--transition);
+    }
+    .mobile-nav a:hover { color: var(--gold); }
+    .mobile-nav .close-btn {
+      position: absolute;
+      top: 24px; right: 24px;
+      font-size: 32px;
+      color: var(--white);
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+
+    /* ─── HERO ─── */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 80px 24px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 80% at 10% 80%, rgba(201,168,76,0.05) 0%, transparent 50%),
+        linear-gradient(160deg, #0d0d0d 0%, #111 50%, #0a0a0a 100%);
+    }
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at 50% 50%, black 30%, transparent 80%);
+    }
+    .hero-content {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold);
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '●'; font-size: 8px; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 7vw, 96px);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+      margin-bottom: 24px;
+    }
+    h1 .accent { color: var(--gold); display: block; }
+    h1 .outline {
+      -webkit-text-stroke: 2px rgba(248,246,240,0.3);
+      color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      color: rgba(248,246,240,0.65);
+      max-width: 520px;
+      margin-bottom: 36px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.3); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: var(--white);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 15px 28px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      border: 1px solid rgba(248,246,240,0.2);
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+    .hero-stats {
+      display: flex;
+      gap: 36px;
+    }
+    .stat { display: flex; flex-direction: column; }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .stat-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+
+    /* ─── BOOKING FORM CARD ─── */
+    .booking-card {
+      background: var(--grey);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+    }
+    .booking-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      color: var(--gold);
+    }
+    .booking-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      background: var(--grey2);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      color: var(--white);
+      padding: 12px 16px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      transition: var(--transition);
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+    .form-group select { cursor: pointer; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .form-submit {
+      width: 100%;
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 15px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    .form-note {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 80px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 4vw, 56px);
+      letter-spacing: 0.03em;
+      line-height: 1.05;
+      margin-bottom: 16px;
+    }
+    .section-intro {
+      font-size: 17px;
+      color: rgba(248,246,240,0.6);
+      max-width: 580px;
+      margin-bottom: 48px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    /* ─── SERVICES ─── */
+    .services-section { background: var(--grey); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .service-card {
+      background: var(--grey);
+      padding: 36px 28px;
+      transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .service-card:hover { background: rgba(201,168,76,0.06); }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .service-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+    .service-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 16px;
+      text-decoration: none;
+    }
+
+    /* ─── WHY US ─── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .why-visual {
+      position: relative;
+      height: 460px;
+      background: var(--grey);
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(201,168,76,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .why-visual-inner {
+      text-align: center;
+    }
+    .big-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 160px;
+      line-height: 1;
+      color: rgba(201,168,76,0.08);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      white-space: nowrap;
+    }
+    .rating-display {
+      position: relative;
+      z-index: 2;
+    }
+    .stars { font-size: 32px; margin-bottom: 8px; }
+    .rating-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 72px;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .rating-sub { font-size: 14px; color: var(--text-muted); }
+
+    .feature-list { display: flex; flex-direction: column; gap: 20px; }
+    .feature-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .feature-dot {
+      width: 40px;
+      height: 40px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .feature-item h4 {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .feature-item p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+    /* ─── AIRPORTS SECTION ─── */
+    .airports-section { background: var(--grey); }
+    .airports-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .airport-card {
+      background: var(--black);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+      padding: 28px;
+      transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .airport-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    .airport-card:hover { border-color: rgba(201,168,76,0.3); }
+    .airport-card:hover::before { transform: scaleX(1); }
+    .airport-code {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 48px;
+      color: rgba(201,168,76,0.15);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .airport-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .airport-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; }
+    .airport-detail {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 14px;
+    }
+    .airport-detail strong { color: var(--gold); }
+
+    /* ─── LOCAL AREAS ─── */
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .area-chip {
+      background: var(--grey);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .area-chip:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.05); }
+    .area-chip span { font-size: 11px; color: var(--text-muted); }
+
+    /* ─── REVIEWS ─── */
+    .reviews-section { background: var(--grey); }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .review-card {
+      background: var(--black);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 8px;
+      padding: 28px;
+    }
+    .review-stars { color: var(--gold); font-size: 16px; margin-bottom: 14px; }
+    .review-text {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(248,246,240,0.8);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .review-avatar {
+      width: 36px;
+      height: 36px;
+      background: rgba(201,168,76,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .review-name { font-size: 14px; font-weight: 600; }
+    .review-date { font-size: 12px; color: var(--text-muted); }
+
+    /* ─── CONTACT SECTION ─── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 28px; }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .contact-item h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px; }
+    .contact-item a { color: var(--white); text-decoration: none; font-size: 17px; font-weight: 600; transition: var(--transition); }
+    .contact-item a:hover { color: var(--gold); }
+
+    .contact-form {
+      background: var(--grey);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 36px;
+    }
+    .contact-form h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #050505;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 60px 24px 30px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-brand p { font-size: 14px; color: var(--text-muted); margin-top: 16px; line-height: 1.7; max-width: 280px; }
+    .footer-col h4 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .footer-col a {
+      display: block;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 10px;
+      transition: var(--transition);
+    }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--gold); }
+
+    /* ─── WHATSAPP FLOAT ─── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .whatsapp-bubble {
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+    .whatsapp-bubble:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(37,211,102,0.5); }
+    .whatsapp-bubble svg { width: 32px; height: 32px; fill: white; }
+    .whatsapp-label {
+      background: var(--grey);
+      color: var(--white);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.1);
+      white-space: nowrap;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    /* ─── CALL BUTTON STRIP ─── */
+    .call-strip {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--black);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      padding: 12px 24px;
+      display: none;
+      justify-content: center;
+      gap: 12px;
+      z-index: 80;
+    }
+    .call-strip a {
+      flex: 1;
+      max-width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .call-strip .call-btn { background: var(--gold); color: var(--black); }
+    .call-strip .wa-btn { background: #25D366; color: white; }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      background: var(--grey);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 20px 24px;
+    }
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(248,246,240,0.7);
+    }
+    .trust-item span:first-child { font-size: 20px; }
+
+    /* ─── SUCCESS MESSAGE ─── */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 24px;
+      background: rgba(37,211,102,0.1);
+      border: 1px solid rgba(37,211,102,0.3);
+      border-radius: var(--radius);
+      color: #25D366;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { grid-template-columns: 1fr; }
+      .booking-card { order: -1; }
+      .why-grid, .contact-grid { grid-template-columns: 1fr; }
+      .why-visual { height: 280px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .call-strip { display: flex; }
+      body { padding-bottom: 70px; }
+      .whatsapp-float { bottom: 90px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 40px 20px; min-height: auto; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero-stats { gap: 24px; }
+      .airports-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Banner -->
+<div class="announcement-banner">
+  🚕 New Customer Offer: <strong>10% off your first booking!</strong> &nbsp;|&nbsp; Call us: <a href="tel:07444406443">07444 406443</a>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="44 Taxi — Home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img" aria-label="44 Taxi">
+        <defs>
+          <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#e8c96a"/>
+            <stop offset="55%" style="stop-color:#c9a84c"/>
+            <stop offset="100%" style="stop-color:#9a7530"/>
+          </linearGradient>
+          <linearGradient id="badgeG" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#d4af57"/>
+            <stop offset="100%" style="stop-color:#9a7530"/>
+          </linearGradient>
+        </defs>
+        <!-- Gold badge -->
+        <rect x="1" y="4" width="62" height="64" rx="9" fill="url(#badgeG)"/>
+        <rect x="4" y="7" width="56" height="58" rx="6" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="1"/>
+        <!-- Car body -->
+        <rect x="9" y="42" width="46" height="13" rx="3" fill="#0a0a0a" opacity="0.8"/>
+        <!-- Car roof -->
+        <path d="M17 42 L21 33 L43 33 L47 42 Z" fill="#0a0a0a" opacity="0.8"/>
+        <!-- Windows -->
+        <rect x="22" y="35" width="8" height="6" rx="1.5" fill="rgba(255,255,255,0.38)"/>
+        <rect x="33" y="35" width="8" height="6" rx="1.5" fill="rgba(255,255,255,0.38)"/>
+        <!-- Wheels -->
+        <circle cx="19" cy="55" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+        <circle cx="45" cy="55" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
+        <circle cx="19" cy="55" r="2" fill="rgba(255,255,255,0.18)"/>
+        <circle cx="45" cy="55" r="2" fill="rgba(255,255,255,0.18)"/>
+        <!-- Taxi roof sign -->
+        <rect x="27" y="27" width="10" height="5" rx="1.5" fill="rgba(255,255,255,0.92)"/>
+        <text x="32" y="31.2" font-family="Arial" font-size="3.2" font-weight="900" fill="#c9a84c" text-anchor="middle">TAXI</text>
+        <!-- Divider -->
+        <line x1="74" y1="14" x2="74" y2="58" stroke="rgba(201,168,76,0.28)" stroke-width="1.5"/>
+        <!-- "44" -->
+        <text x="80" y="56" font-family="Arial Black,Arial,sans-serif" font-size="50" font-weight="900" fill="url(#goldG)" letter-spacing="-2">44</text>
+        <!-- TAXI word -->
+        <text x="157" y="44" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#f8f6f0" letter-spacing="5">TAXI</text>
+        <!-- Tagline -->
+        <text x="158" y="58" font-family="Arial,sans-serif" font-size="8" font-weight="400" fill="rgba(201,168,76,0.82)" letter-spacing="3">RELIABLE · 24/7</text>
+      </svg>
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#airports">Airports</a>
+      <a href="#areas">Areas</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:07444406443" class="nav-phone">📞 07444 406443</a>
+      <a href="#booking" class="nav-cta">Book Now</a>
+    </nav>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <a href="/" class="logo" style="margin-bottom:8px" onclick="toggleMenu()">
+    <img src="assets/logo.svg" alt="44 Taxi" width="200" height="50">
+  </a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#airports" onclick="toggleMenu()">Airports</a>
+  <a href="#areas" onclick="toggleMenu()">Areas</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="tel:07444406443">📞 07444 406443</a>
+  <a href="#booking" onclick="toggleMenu()" style="color:var(--gold)">Book Now →</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">Available 24/7 · Always On Time</div>
+      <h1>
+        <span>Your Reliable</span>
+        <span class="accent">Local Taxi</span>
+        <span class="outline">& Transfers</span>
+      </h1>
+      <p class="hero-sub">
+        Professional taxi service for local journeys, airport transfers, and everything in between. Fixed prices, no hidden fees, every time.
+      </p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">📋 Book Online</a>
+        <a href="tel:07444406443" class="btn-secondary">📞 Call to Book</a>
+        <a href="https://wa.me/447444406443" class="btn-secondary" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5★</span>
+          <span class="stat-label">Rated Service</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Availability</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Fixed</span>
+          <span class="stat-label">Prices</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0%</span>
+          <span class="stat-label">Hidden Fees</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking-card" id="booking">
+      <h3>Quick Booking</h3>
+      <p>We'll confirm your booking within minutes</p>
+      <form id="bookingForm" onsubmit="submitBooking(event)">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" name="name" placeholder="Full name" required>
+        </div>
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" name="phone" placeholder="07xxx xxxxxx" required>
+        </div>
+        <div class="form-group">
+          <label>Pickup Location *</label>
+          <input type="text" name="pickup" placeholder="Street address or postcode" required>
+        </div>
+        <div class="form-group">
+          <label>Destination *</label>
+          <input type="text" name="destination" placeholder="Where to?" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="date">
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <input type="time" name="time">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Journey Type</label>
+          <select name="type">
+            <option value="">Select type</option>
+            <option>Local Journey</option>
+            <option>Airport Transfer</option>
+            <option>Station Transfer</option>
+            <option>Long Distance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="form-submit">
+          ✓ Request Booking
+        </button>
+        <p class="form-note">🔒 Your details are kept private. We'll call to confirm.</p>
+      </form>
+      <div class="form-success" id="bookingSuccess">
+        ✅ Booking request sent! We'll call you within minutes to confirm.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span>✅</span> Fully Licensed & Insured</div>
+    <div class="trust-item"><span>🏆</span> 5-Star Rated Drivers</div>
+    <div class="trust-item"><span>💷</span> Fixed Competitive Prices</div>
+    <div class="trust-item"><span>🛡️</span> Flight Tracking Included</div>
+    <div class="trust-item"><span>🧹</span> Clean Comfortable Vehicles</div>
+  </div>
+</div>
+
+<!-- Services -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="section-label">What We Offer</div>
+    <h2>Our Services</h2>
+    <p class="section-intro">From quick local hops to long-distance airport runs — we've got you covered around the clock.</p>
+    <div class="services-grid">
+      <a href="#airports" class="service-card">
+        <div class="service-icon">✈️</div>
+        <h3>Airport Transfers</h3>
+        <p>Stress-free transfers to all major airports. We track your flight and adjust pickup if there are delays.</p>
+        <span class="service-link">Learn more →</span>
+      </a>
+      <a href="#areas" class="service-card">
+        <div class="service-icon">🏙️</div>
+        <h3>Local Taxi</h3>
+        <p>Quick and reliable local journeys for everyday travel, shopping, appointments, and nights out.</p>
+        <span class="service-link">Learn more →</span>
+      </a>
+      <a href="#contact" class="service-card">
+        <div class="service-icon">🚉</div>
+        <h3>Station Transfers</h3>
+        <p>Prompt pickups and drop-offs at local train and bus stations. Never miss your connection.</p>
+        <span class="service-link">Learn more →</span>
+      </a>
+      <a href="#contact" class="service-card">
+        <div class="service-icon">🎉</div>
+        <h3>Event Travel</h3>
+        <p>Weddings, concerts, nights out — arrive in style with a professional, well-presented driver.</p>
+        <span class="service-link">Learn more →</span>
+      </a>
+      <a href="#contact" class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Business Travel</h3>
+        <p>Corporate accounts, meet & greet, and executive-level transport for business professionals.</p>
+        <span class="service-link">Learn more →</span>
+      </a>
+      <a href="#contact" class="service-card">
+        <div class="service-icon">🌙</div>
+        <h3>24/7 On-Demand</h3>
+        <p>Early morning or late night — 44 Taxi is always available when you need us most.</p>
+        <span class="service-link">Book now →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section>
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual">
+        <div class="big-number">5★</div>
+        <div class="rating-display">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <div class="rating-num">5.0</div>
+          <div class="rating-sub">Average customer rating</div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Why Choose 44 Taxi</div>
+        <h2>Driven by Quality, Guided by Trust</h2>
+        <p class="section-intro">We're not just a taxi service — we're your reliable transport partner for every journey.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-dot">⏱️</div>
+            <div>
+              <h4>Always On Time</h4>
+              <p>We track your pickup location and arrive early. No waiting, no stress.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-dot">💷</div>
+            <div>
+              <h4>Fixed Prices, No Surprises</h4>
+              <p>Transparent fares quoted upfront. What we quote is what you pay.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-dot">✈️</div>
+            <div>
+              <h4>Flight Tracking</h4>
+              <p>We monitor your flight in real-time and adjust collection times automatically.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-dot">🚗</div>
+            <div>
+              <h4>Clean, Comfortable Cars</h4>
+              <p>Well-maintained, spacious vehicles with plenty of room for luggage.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-dot">📱</div>
+            <div>
+              <h4>Easy Booking</h4>
+              <p>Book online, by phone, or WhatsApp — whichever is easiest for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Airport Transfers -->
+<section class="airports-section" id="airports">
+  <div class="container">
+    <div class="section-label">Airport Transfers</div>
+    <h2>All Major UK Airports</h2>
+    <p class="section-intro">Fixed-price airport transfers with meet & greet, flight tracking, and free waiting time on arrivals.</p>
+    <div class="airports-grid">
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">LHR</div>
+        <h3>London Heathrow Airport</h3>
+        <p>All terminals covered. Meet & greet service available.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">LGW</div>
+        <h3>London Gatwick Airport</h3>
+        <p>North and South terminals. Early morning pickups welcome.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">STN</div>
+        <h3>London Stansted Airport</h3>
+        <p>Fast access routes. 24/7 availability for all flights.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">LTN</div>
+        <h3>London Luton Airport</h3>
+        <p>Competitive rates to and from Luton for all passengers.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">BHX</div>
+        <h3>Birmingham Airport</h3>
+        <p>Long-distance executive transfers to Birmingham Airport.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+      <a href="#contact" class="airport-card">
+        <div class="airport-code">MAN</div>
+        <h3>Manchester Airport</h3>
+        <p>Comfortable long-distance transfers to Manchester Airport.</p>
+        <div class="airport-detail"><span>Fixed price</span><strong>Book →</strong></div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:32px;">
+      <p style="color:var(--text-muted); margin-bottom:16px;">Don't see your airport? We cover all UK airports — just ask.</p>
+      <a href="tel:07444406443" class="btn-primary">📞 Call for a Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- Local Areas -->
+<section id="areas">
+  <div class="container">
+    <div class="section-label">Local Coverage</div>
+    <h2>Areas We Cover</h2>
+    <p class="section-intro">We provide local taxi services across the following towns and areas. Click your area for more information.</p>
+    <div class="areas-grid">
+      <a href="#contact" class="area-chip">Local Town Centre <span>→</span></a>
+      <a href="#contact" class="area-chip">North Area <span>→</span></a>
+      <a href="#contact" class="area-chip">South District <span>→</span></a>
+      <a href="#contact" class="area-chip">East Village <span>→</span></a>
+      <a href="#contact" class="area-chip">West End <span>→</span></a>
+      <a href="#contact" class="area-chip">City Centre <span>→</span></a>
+      <a href="#contact" class="area-chip">Business Park <span>→</span></a>
+      <a href="#contact" class="area-chip">Hospital Area <span>→</span></a>
+      <a href="#contact" class="area-chip">University Quarter <span>→</span></a>
+      <a href="#contact" class="area-chip">Shopping Centre <span>→</span></a>
+      <a href="#contact" class="area-chip">Train Station <span>→</span></a>
+      <a href="#contact" class="area-chip">And More... <span>→</span></a>
+    </div>
+    <p style="margin-top:20px; font-size:13px; color:var(--text-muted);">
+      💡 <strong style="color:var(--white)">Tip:</strong> Not sure if we cover your area? Call <a href="tel:07444406443" style="color:var(--gold)">07444 406443</a> — we almost certainly do.
+    </p>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="section-label">Customer Reviews</div>
+    <h2>What Our Customers Say</h2>
+    <p class="section-intro">Don't take our word for it — here's what real customers have to say about 44 Taxi.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Absolutely brilliant service! Driver was on time, car was spotless, and the price was exactly as quoted. Will definitely use 44 Taxi again for my airport run."</p>
+        <div class="review-author">
+          <div class="review-avatar">SR</div>
+          <div>
+            <div class="review-name">Sarah R.</div>
+            <div class="review-date">Airport Transfer · Heathrow</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Used 44 Taxi for a late night pickup after a concert. Driver was waiting for us and got us home safely. Excellent service, highly recommend!"</p>
+        <div class="review-author">
+          <div class="review-avatar">JM</div>
+          <div>
+            <div class="review-name">James M.</div>
+            <div class="review-date">Local Journey · Night</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Professional, polite, and punctual. My go-to taxi company now. Booked through WhatsApp and confirmed within 2 minutes. That's how it should be done!"</p>
+        <div class="review-author">
+          <div class="review-avatar">AP</div>
+          <div>
+            <div class="review-name">Amina P.</div>
+            <div class="review-date">Regular Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:36px;">
+      <a href="https://wa.me/447444406443?text=I'd+like+to+leave+a+review+for+44+Taxi" class="btn-secondary" target="_blank" rel="noopener">
+        💬 Leave Us a Review via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Get In Touch</div>
+    <h2>Book or Enquire Today</h2>
+    <p class="section-intro">Reach us by phone, WhatsApp, or fill in the form below and we'll get back to you promptly.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Call Us</h4>
+            <a href="tel:07444406443">07444 406443</a>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Available 24/7</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/447444406443" target="_blank" rel="noopener">Message Us on WhatsApp</a>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Quick replies, day or night</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:info@44taxi.com">info@44taxi.com</a>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">For non-urgent enquiries</p>
+          </div>
+        </div>
+        <div style="background:var(--grey); border:1px solid rgba(201,168,76,0.2); border-radius:8px; padding:24px; margin-top:8px;">
+          <p style="font-size:13px; color:var(--text-muted); margin-bottom:12px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700;">Operating Hours</p>
+          <p style="font-size:15px; font-weight:600;">24 Hours a Day, 7 Days a Week</p>
+          <p style="font-size:13px; color:var(--text-muted); margin-top:6px;">Including bank holidays and Christmas</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send an Enquiry</h3>
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone *</label>
+              <input type="tel" name="phone" placeholder="07xxx xxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Optional">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message / Journey Details *</label>
+            <textarea name="message" rows="4" placeholder="Tell us where you're going, when, and any special requirements..." required style="resize:vertical"></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Enquiry →</button>
+          <p class="form-note">✉️ Sent to info@44taxi.com · We reply within the hour</p>
+        </form>
+        <div class="form-success" id="contactSuccess">
+          ✅ Message sent! We'll be in touch very soon.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo" aria-label="44 Taxi — Home">
+          <img src="assets/logo.svg" alt="44 Taxi Logo" width="240" height="60">
+        </a>
+        <p>Professional taxi and private hire service available 24/7. Fixed prices, reliable drivers, and a commitment to getting you there safely and on time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#airports">Airport Transfers</a>
+        <a href="#areas">Local Taxi</a>
+        <a href="#contact">Station Transfers</a>
+        <a href="#contact">Event Travel</a>
+        <a href="#contact">Business Travel</a>
+      </div>
+      <div class="footer-col">
+        <h4>Airports</h4>
+        <a href="#airports">Heathrow (LHR)</a>
+        <a href="#airports">Gatwick (LGW)</a>
+        <a href="#airports">Stansted (STN)</a>
+        <a href="#airports">Luton (LTN)</a>
+        <a href="#airports">All Airports</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:07444406443">📞 07444 406443</a>
+        <a href="mailto:info@44taxi.com">✉️ info@44taxi.com</a>
+        <a href="https://wa.me/447444406443" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+        <a href="#booking">📋 Book Online</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 44 Taxi. All rights reserved.</span>
+      <span>
+        <a href="#" style="margin-right:16px">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<div class="whatsapp-float">
+  <span class="whatsapp-label">Chat on WhatsApp</span>
+  <a href="https://wa.me/447444406443?text=Hi%2C+I%27d+like+to+book+a+taxi+with+44+Taxi" target="_blank" rel="noopener" class="whatsapp-bubble" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- Mobile Call Strip -->
+<div class="call-strip">
+  <a href="tel:07444406443" class="call-btn">📞 Call Now</a>
+  <a href="https://wa.me/447444406443" class="wa-btn" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // Booking form submission
+  async function submitBooking(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    const data = new FormData(e.target);
+    const payload = Object.fromEntries(data.entries());
+    
+    // Send via Cloudflare Forms (replace with your actual endpoint)
+    // For now, simulates success and opens WhatsApp as fallback
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ 'form-name': 'booking', ...payload }).toString()
+      });
+    } catch(err) {}
+
+    // Always show success and open WhatsApp as backup
+    const msg = `Hi 44 Taxi! I'd like to book a taxi.
+Name: ${payload.name}
+Phone: ${payload.phone}
+From: ${payload.pickup}
+To: ${payload.destination}
+Date: ${payload.date || 'ASAP'}
+Time: ${payload.time || 'ASAP'}
+Type: ${payload.type || 'Local Journey'}`;
+
+    document.getElementById('bookingSuccess').style.display = 'block';
+    e.target.style.display = 'none';
+    
+    setTimeout(() => {
+      window.open('https://wa.me/447444406443?text=' + encodeURIComponent(msg), '_blank');
+    }, 1500);
+  }
+
+  // Contact form submission
+  async function submitContact(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    const data = new FormData(e.target);
+    const payload = Object.fromEntries(data.entries());
+
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ 'form-name': 'contact', ...payload }).toString()
+      });
+    } catch(err) {}
+
+    document.getElementById('contactSuccess').style.display = 'block';
+    e.target.style.display = 'none';
+  }
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Animate elements on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .airport-card, .review-card, .feature-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>

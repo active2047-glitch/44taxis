@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="44 Taxi Logo">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c96a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c9a84c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a7530;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9a7530;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Badge / Shield background -->
+  <rect x="2" y="8" width="64" height="64" rx="10" ry="10" fill="url(#badgeGrad)"/>
+
+  <!-- Inner badge border -->
+  <rect x="5" y="11" width="58" height="58" rx="7" ry="7" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+
+  <!-- Taxi car silhouette inside badge -->
+  <!-- Car body -->
+  <rect x="10" y="44" width="48" height="14" rx="3" fill="#0a0a0a" opacity="0.85"/>
+  <!-- Car roof -->
+  <path d="M18 44 L22 34 L46 34 L50 44 Z" fill="#0a0a0a" opacity="0.85"/>
+  <!-- Taxi stripe -->
+  <rect x="10" y="48" width="48" height="4" fill="rgba(255,255,255,0.12)"/>
+  <!-- Windows -->
+  <rect x="23" y="36" width="9" height="7" rx="1.5" fill="rgba(255,255,255,0.35)"/>
+  <rect x="35" y="36" width="9" height="7" rx="1.5" fill="rgba(255,255,255,0.35)"/>
+  <!-- Wheels -->
+  <circle cx="21" cy="58" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <circle cx="47" cy="58" r="5" fill="#0a0a0a" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <circle cx="21" cy="58" r="2" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="47" cy="58" r="2" fill="rgba(255,255,255,0.2)"/>
+  <!-- Taxi sign on roof -->
+  <rect x="28" y="28" width="12" height="5" rx="1.5" fill="rgba(255,255,255,0.9)"/>
+  <text x="34" y="32.5" font-family="Arial" font-size="3.5" font-weight="900" fill="#c9a84c" text-anchor="middle">TAXI</text>
+
+  <!-- Divider line -->
+  <line x1="78" y1="16" x2="78" y2="64" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
+
+  <!-- "44" large number -->
+  <text x="86" y="58"
+    font-family="'Arial Black', 'Arial', sans-serif"
+    font-size="52"
+    font-weight="900"
+    fill="url(#goldGrad)"
+    filter="url(#glow)"
+    letter-spacing="-2">44</text>
+
+  <!-- "TAXI" word -->
+  <text x="168" y="46"
+    font-family="'Arial', sans-serif"
+    font-size="22"
+    font-weight="700"
+    fill="#f8f6f0"
+    letter-spacing="6">TAXI</text>
+
+  <!-- Tagline -->
+  <text x="169" y="62"
+    font-family="'Arial', sans-serif"
+    font-size="9"
+    font-weight="400"
+    fill="rgba(201,168,76,0.8)"
+    letter-spacing="3.5">RELIABLE · 24/7</text>
+
+</svg>
